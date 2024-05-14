@@ -1,0 +1,27 @@
+<main>
+  <div class="login">
+    <div class="logo">
+      <img src="../../../assets/images/logo.svg" alt="VoltPath logo" />
+      <h3>VoltPath</h3>
+    </div>
+    <form (submit)="onSubmit()">
+      <input
+        type="text"
+        placeholder="usuario"
+        [(ngModel)]="username"
+        name="pass"
+      />
+      <input
+        type="password"
+        placeholder="Contraseña"
+        [(ngModel)]="password"
+        name="pass"
+      />
+      <div class="buttons">
+        <button type="submit" class="log">Entrar</button>
+        <button class="reg" disabled>Registro</button>
+      </div>
+      <a href="/map">Continuar sin cuenta</a>
+    </form>
+  </div>
+</main>

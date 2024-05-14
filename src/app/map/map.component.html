@@ -1,0 +1,15 @@
+<body>
+  <app-header></app-header>
+  <main>
+    <app-aside
+      class="aside" id="asidePadre"
+      [ubicacion]="ubicacion"
+      [routes]="routes"
+      (encontrarCargadores)="encontrarCargadores($event)"
+      (calculateRoute)="calculateRoute($event)"
+    ></app-aside>
+    <div class="map" id="map"></div>
+  </main>
+</body>
+
+<a href="" target="_blank"></a>
